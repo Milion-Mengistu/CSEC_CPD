@@ -1,7 +1,7 @@
 def shaass_and_oskols(wires, shots):
     for shot in shots:
         wire, bird = shot
-        wire -= 1  # Convert to zero-based index
+        wire -= 1  
         if wire > 0:
             wires[wire - 1] += bird - 1
         if wire < len(wires) - 1:
